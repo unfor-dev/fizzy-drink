@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}", // Asosiy fayllar
+    "./components/**/*.{js,ts,jsx,tsx,mdx}", // Komponentlar
+    "./slices/**/*.{js,ts,jsx,tsx,mdx}", // Slice Machine fayllari
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -18,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: ["prettier-plugin-tailwindcss"],
+  plugins: [], // prettier-plugin bu yerda kerak emas
 };
