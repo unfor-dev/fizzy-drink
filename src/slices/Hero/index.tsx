@@ -19,7 +19,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      
+      className="hero"
     >
       <div className="grid">
         <div className="grid h-screen place-items-center">
@@ -28,6 +28,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
               <TextSplitter 
                 text={asText(slice.primary.heading)} 
                 wordDisplayStyle="block"
+                className="hero-header-word"
               />
             </h1>
             <div className="hero-subheading mt-12 text-5xl font-semibold text-sky-950 lg:text-6xl">
@@ -40,6 +41,7 @@ const Hero: FC<HeroProps> = ({ slice }) => {
             <Button 
               buttonLink={slice.primary.button_link}
               buttonText={slice.primary.button_text}
+              className="hero-button mt-12" 
             />
           </div>
         </div>
