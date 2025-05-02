@@ -1,0 +1,67 @@
+/* FONTS */
+@font-face {
+  font-family: 'Alpino';
+  src: 
+    local('Alpino'),
+    url('/fonts/Alpino-Regular.woff2') format('woff2'),
+    url('/fonts/Alpino-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* VARIABLES */
+:root {
+  --font-alpino: 'Alpino', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* BASE STYLES */
+body {
+  font-family: var(--font-alpino);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ANIMATIONS */
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ANIMATION CLASSES */
+/* .animate-slide-left {
+  animation: slide-left 3s var(--animation-timing) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-spin-slow {
+  animation: spin 6s linear infinite;
+  will-change: transform;
+} */
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  .animate-slide-left,
+  .animate-spin-slow {
+    animation: none;
+  }
+}

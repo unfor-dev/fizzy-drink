@@ -1,9 +1,9 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+
+const tailwindConfig = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx,mdx}", // Asosiy fayllar
-    "./components/**/*.{js,ts,jsx,tsx,mdx}", // Komponentlar
-    "./slices/**/*.{js,ts,jsx,tsx,mdx}", // Slice Machine fayllari
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./slices/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -14,7 +14,7 @@ module.exports = {
         "slide-left": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
-        },
+        }, 
       },
       animation: {
         "slide-left": "slide-left 3s linear infinite",
@@ -22,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [], // prettier-plugin bu yerda kerak emas
+  plugins: [],
 };
