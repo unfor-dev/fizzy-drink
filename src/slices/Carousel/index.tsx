@@ -1,5 +1,7 @@
 "use client";
 
+import { FC, JSX } from "react";
+
 import { Content } from "@prismicio/client";
 import {
   PrismicRichText,
@@ -33,6 +35,7 @@ const FLAVORS: {
   },
   { flavor: "watermelon", color: "#4B7002", name: "Watermelon Crush" },
 ];
+
 
 /**
  * Props for `Carousel`.
@@ -94,7 +97,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
         <PrismicText field={slice.primary.heading} />
       </h2>
 
-      <div className="grid grid-cols-[auto,auto,auto] items-center">
+      <div className="grid grid-cols-[auto,auto,auto] items-center" style={{ display: "flex" }}>
         {/* Left */}
         <ArrowButton
           onClick={() => changeFlavor(currentFlavorIndex + 1)}

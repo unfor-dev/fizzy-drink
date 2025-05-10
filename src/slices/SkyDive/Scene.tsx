@@ -183,7 +183,6 @@ function ThreeText({
       scale={isDesktop ? 1 : 0.5}
       color={color}
       material={material}
-      font="/fonts/Alpino-Variable.woff"
       fontWeight={900}
       anchorX={"center"}
       anchorY={"middle"}
