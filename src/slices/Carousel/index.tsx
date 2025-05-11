@@ -7,7 +7,7 @@ import {
   SliceComponentProps,
 } from "@prismicio/react";
 import { Center, Environment, View } from "@react-three/drei";
-import { useRef, useState } from "react";
+import { JSX, useRef, useState } from "react";
 import clsx from "clsx";
 import { Group } from "three";
 import gsap from "gsap";

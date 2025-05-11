@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "slicemachine": "start-slicemachine",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -30,6 +31,7 @@
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.1.6",
     "three": "^0.176.0",
+    "vercel": "^41.7.4",
     "zustand": "^5.0.4"
   },
   "devDependencies": {
