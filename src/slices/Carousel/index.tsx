@@ -1,7 +1,5 @@
 "use client";
 
-import { FC, JSX } from "react";
-
 import { Content } from "@prismicio/client";
 import {
   PrismicRichText,
@@ -35,7 +33,6 @@ const FLAVORS: {
   },
   { flavor: "watermelon", color: "#4B7002", name: "Watermelon Crush" },
 ];
-
 
 /**
  * Props for `Carousel`.

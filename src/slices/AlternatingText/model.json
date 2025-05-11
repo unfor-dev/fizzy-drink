@@ -33,7 +33,7 @@
                   "label": "Body",
                   "placeholder": "",
                   "allowTargetBlank": true,
-                  "single": "paragraph"
+                  "multi": "paragraph,strong,em"
                 }
               }
             }

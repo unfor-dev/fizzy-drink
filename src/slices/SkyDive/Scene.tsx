@@ -1,7 +1,7 @@
 "use client";
 
 import { Content } from "@prismicio/client";
-import { Cloud, Clouds, Environment, OrbitControls, Text } from "@react-three/drei";
+import { Cloud, Clouds, Environment, Text } from "@react-three/drei";
 import { useRef } from "react";
 import * as THREE from "three";
 import gsap from "gsap";
@@ -155,7 +155,7 @@ export default function Scene({ sentence, flavor }: SkyDiveProps) {
 
       {/* Text */}
       <group ref={wordsRef}>
-        {sentence && <ThreeText sentence={sentence} color="#7C0413" />}
+        {sentence && <ThreeText sentence={sentence} color="#F97315" />}
       </group>
 
       {/* Lights */}
@@ -183,6 +183,7 @@ function ThreeText({
       scale={isDesktop ? 1 : 0.5}
       color={color}
       material={material}
+      font="/fonts/Alpino-Variable.woff"
       fontWeight={900}
       anchorX={"center"}
       anchorY={"middle"}

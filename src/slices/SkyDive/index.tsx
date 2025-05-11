@@ -6,7 +6,6 @@ import { SliceComponentProps } from "@prismicio/react";
 import { Bounded } from "@/components/Bounded";
 import Scene from "./Scene";
 import { View } from "@react-three/drei";
-import { JSX } from "react";
 /**
  * Props for `SkyDive`.
  */
